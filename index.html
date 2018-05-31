@@ -6,7 +6,7 @@
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
 </script>
-
+<!-- DFP header tag-->
 <script>
   googletag.cmd.push(function() {
     googletag.defineSlot('/339287950/fabio', [300, 250], 'div-gpt-ad-1527766132479-0').addService(googletag.pubads());
@@ -14,20 +14,43 @@
     googletag.enableServices();
   });
 </script>	
-	
+<!-- Adzerk header tag-->
+<script type="text/javascript">
+  var protocol = document.location.protocol == "https:" ? "https" : "http";
+  var z = document.createElement("script");
+  z.type = "text/javascript";
+  z.src = protocol + "://static.adzerk.net/ados.js";
+  z.async = true;
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(z,s);
+</script>
+<script type="text/javascript">
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  ados.run.push(function() {
+    /* load placement for account: tradingdeskdk, site: Github test, size: 300x250 - Medium Rectangle */
+    ados_add_placement(10146, 1016641, "azk466824", 5);
+    ados_load();
+  });
+</script>
+
+
 </head>
 <body>
 
 <h1>This is DFP!</h1>
 
 <p>
-<!-- /339287950/fabio -->
+<!-- DFP ad slot /339287950/fabio -->
 <div id='div-gpt-ad-1527766132479-0' style='height:250px; width:300px;'>
 <script>
 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1527766132479-0'); });
 </script>
 </div>
 
+<!-- Adzerk ad slot -->
+
+<div id="azk466824"></div>
 
 
 </body>
