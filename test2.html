@@ -60,15 +60,23 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1527778327952-0');
 
 
 <h1> This is adzerk</h1>
+<button onclick="emptyAdzerk()">Clear Adzerk</button>
 
 <!-- Adzerk ad slot -->  
 <div id="azk466824"></div>
 
-<button onclick="emptyAdzerk()">Clear Adzerk</button>
+
 
 <script type="text/javascript">
   function emptyAdzerk(){
    document.getElementById("azk466824").innerHTML = "";
+
+    var kword = prompt(" insert your keyword", "iphone")
+
+    ados_add_placement(10146, 1016641, "azk466824", 5);
+    ados_setKeywords(kword);
+    ados_load();
+
 
   }
 </script>
