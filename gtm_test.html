@@ -1,0 +1,29 @@
+<HTML>
+
+<HEAD>
+<script type="text/javascript" src="https://track.adform.net/serving/scripts/trackpoint/async/"></script>
+<TITLE>My test GTM page!</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF">
+
+<h2>My buttons!</h2>
+<button type="button" onclick="trackpageview(123456789, 'mybutton!')">Click Me!</button>
+
+</BODY>
+<script type="text/javascript">
+	function trackpageview(pixelid,eventname){
+		_adftrack.push({
+        pm: pixelid,
+        divider: encodeURIComponent('|'),
+        pagename: encodeURIComponent(eventname),
+        order : { 
+             sv1: window.top.danbolig.data.property.propertyId
+        }
+    });
+	}
+
+</script>
+
+</HTML>
