@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- 
 <script type="text/javascript" src="https://track.adform.net/serving/scripts/trackpoint/async/"></script>
+-->
 </head>
 <body>
 
@@ -12,15 +14,13 @@
 
 <script type="text/javascript">
 	function trackpageview(pixelid,eventname){
-		_adftrack.push({
+    window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+    window._adftrack.push({
         pm: pixelid,
         divider: encodeURIComponent('|'),
-        pagename: encodeURIComponent(eventname),
-        order : { 
-             sv1: window.top.danbolig.data.property.propertyId
-        }
+        pagename: encodeURIComponent(eventname)
     });
-	}
+    (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://track.adform.net/serving/scripts/trackpoint/async/'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
 
 </script>
 </body>
