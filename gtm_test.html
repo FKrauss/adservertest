@@ -2,26 +2,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- 
 <script type="text/javascript" src="https://track.adform.net/serving/scripts/trackpoint/async/"></script>
--->
+
 </head>
 <body>
 
 <h2>My buttons!</h2>
-<button type="button" onclick="trackpageview(123456789, 'mybutton!')">Click Me!</button>
+<button type="button" onclick="trackpageview()">Click Me!</button>
 
 
 <script type="text/javascript">
-	function trackpageview(pixelid,eventname){
+	function trackpageview(){
     window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
     window._adftrack.push({
-        pm: pixelid,
+        pm: 123456,
         divider: encodeURIComponent('|'),
-        pagename: encodeURIComponent(eventname)
-    });
-    (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://track.adform.net/serving/scripts/trackpoint/async/'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
-
+        pagename: encodeURIComponent("testevent")
+    })
+};
 </script>
 </body>
 </html>
