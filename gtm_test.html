@@ -8,17 +8,12 @@
 <body>
 
 <h2>My buttons!</h2>
-<button type="button" onclick="trackpageview()">Click Me!</button>
+<button type="button" onclick="trackpageview()">Click Me to track a pageview!</button>
 
 
 <script type="text/javascript">
 function trackpageview(){
-    window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
-    window._adftrack.push({
-        pm: 1441211, //my test client
-        divider: encodeURIComponent('|'),
-        pagename: encodeURIComponent("testevent")
-    })
+densou.trackView("fabio_house_1")
 };
 </script>
 </body>
