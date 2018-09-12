@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="https://s3.eu-central-1.amazonaws.com/densou-development/esoft/4/densou-tracking.js"></script>
+<script type="text/javascript" src="https://adserving.densoumedia.com/esoft/5/densou-tracking.js"></script>
 <script type="text/javascript">
 densou.trackView("fabio_house_1")
 </script>
@@ -11,13 +11,16 @@ densou.trackView("fabio_house_1")
 <body>
 
 <h2>My buttons!</h2>
-<button type="button" onclick="trackpageview()">Click Me to track a pageview!</button>
+<button type="button" onclick="trackbookvisit()">Click Me to track a visit!</button>
 
 
 <script type="text/javascript">
-function trackpageview(){
+function trackbookvisit(){
 densou.track("book_visit", "tralalala");
 };
+function tracksomethignelse(smtelse){
+densou.track(smtelse, "tralalala");	
+}
 </script>
 
 <br>
@@ -26,8 +29,9 @@ densou.track("book_visit", "tralalala");
 <br>
 <br>
 <p>Now let's test how it works with GTM</p>
+<input type="text" id="myeventvalue">
 
-<button type="button">
+<button type="button" onclick="tracksomethignelse(document.getElementById('myeventvalue').value)"><<< Click me to track the event  </button>
 
 </body>
 </html>
