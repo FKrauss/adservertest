@@ -9,8 +9,23 @@
 <!-- DFP header tag-->
 <script  type="text/javascript">
   googletag.cmd.push(function() {
-    googletag.defineSlot('/21739884673/gj_mpu', [300, 250], 'div-gpt-ad-1527778327952-0').addService(googletag.pubads());
-//    googletag.pubads().enableSingleRequest();
+    googletag.defineSlot('/21739884673/gj_mpu', [300, 250], 'bucket=1').setTargeting('bucket', ['1']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/21739884673/gj_mpu', [300, 250], 'bucket=2').setTargeting('bucket', ['2']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/21739884673/gj_mpu', [300, 250], 'bucket=3').setTargeting('bucket', ['3']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/21739884673/gj_mpu', [300, 250], 'bucket=4').setTargeting('bucket', ['4']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
 </script>	
@@ -19,23 +34,44 @@
 </head>
 <body>
 
-<h1> THis is DFP non passback</h1>
+<h1> THis is DFP bucket 1</h1>
 
-<!-- /34088581/Test -->
-<div id='div-gpt-ad-1527778327952-0' style='height:250px; width:300px;'>
+<!-- bucket 1 -->
+<div id='bucket=1' style='height:250px; width:300px;'>
 <script>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1527778327952-0'); });
+googletag.cmd.push(function() { googletag.display('bucket=1'); });
+</script>
+</div>
+
+<h1> THis is DFP bucket 2</h1>
+
+<!-- bucket 1 -->
+<div id='bucket=2' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('bucket=2'); });
+</script>
+</div>
+
+<h1> THis is DFP bucket 3</h1>
+
+<!-- bucket 1 -->
+<div id='bucket=3' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('bucket=3'); });
+</script>
+</div>
+
+<h1> THis is DFP bucket 4</h1>
+
+<!-- bucket 1 -->
+<div id='bucket=4' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('bucket=4'); });
 </script>
 </div>
 
 
-
-<h1>This is DFP! (passback)</h1>
-
 <p>
-
-<div data-glade data-ad-unit-path='/21739884673/gj_mpu' width='300' height='250'></div>
-<script async src='https://securepubads.g.doubleclick.net/static/glade.js'></script>
 
 
 
